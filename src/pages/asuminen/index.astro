@@ -1,0 +1,42 @@
+---
+import { getCollection, getEntry, render } from 'astro:content';
+import Article from '../../layouts/Article.astro';
+import { categories } from '../../lib/site';
+
+const entry = await getEntry('pages', 'asuminen');
+if (!entry) throw new Error('Asuminen-sivu puuttuu');
+const { Content } = await render(entry);
+const living = (await getCollection('living')).sort((a, b) => a.data.order - b.data.order);
+---
+
+<Article title="Asuminen ja eläminen" eyebrow="Kannelkylä" wide>
+  <div class="mt-10 space-y-12">
+    {
+      categories.map((category) => {
+        const items = living.filter((item) => item.data.category === category.id);
+        return (
+          <section id={category.id} class="scroll-mt-28">
+            <h2 class="font-serif text-3xl tracking-tight text-forest">{category.label}</h2>
+            <p class="mt-2 text-muted">{category.text}</p>
+            <ul class="mt-5 grid gap-3 sm:grid-cols-2">
+              {items.map((item) => (
+                <li>
+                  <a
+                    href={`/asuminen/${item.id}`}
+                    class="block h-full rounded-2xl border border-line bg-cream px-5 py-4 hover:border-moss"
+                  >
+                    <p class="font-serif text-2xl text-ink">{item.data.title}</p>
+                    <p class="mt-1 text-muted">{item.data.description}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        );
+      })
+    }
+  </div>
+  <div class="prose mt-14 max-w-3xl">
+    <Content />
+  </div>
+</Article>

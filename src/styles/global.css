@@ -1,0 +1,173 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans 3", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", "Iowan Old Style", Georgia, serif;
+  --color-ink: #1c1917;
+  --color-paper: #f3efe6;
+  --color-cream: #fbf8f3;
+  --color-forest: #1c3b33;
+  --color-moss: #2d6a4f;
+  --color-leaf: #e6f0ea;
+  --color-clay: #8c3c36;
+  --color-line: #e4d9c8;
+  --color-muted: #5c554c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: #d7ebdf;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-moss);
+  outline-offset: 3px;
+}
+
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 650;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-moss);
+}
+
+.prose {
+  color: var(--color-ink);
+  font-size: 1.075rem;
+  line-height: 1.7;
+}
+
+.prose > * + * {
+  margin-top: 1rem;
+}
+
+.prose h2,
+.prose h3 {
+  font-family: var(--font-serif);
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--color-forest);
+}
+
+.prose h2 {
+  margin-top: 2.25rem;
+  font-size: 1.85rem;
+}
+
+.prose h3 {
+  margin-top: 1.75rem;
+  font-size: 1.35rem;
+}
+
+.prose a {
+  color: var(--color-moss);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.prose a:hover {
+  color: var(--color-forest);
+}
+
+.prose ul,
+.prose ol {
+  padding-left: 1.25rem;
+}
+
+.prose ul {
+  list-style: disc;
+}
+
+.prose ol {
+  list-style: decimal;
+}
+
+.prose li + li {
+  margin-top: 0.35rem;
+}
+
+.prose strong {
+  font-weight: 700;
+}
+
+.prose img {
+  width: 100%;
+  height: auto;
+  margin-top: 1.25rem;
+  border-radius: 1.1rem;
+  background: var(--color-line);
+}
+
+.prose table {
+  width: 100%;
+  margin-top: 1.25rem;
+  border-collapse: collapse;
+  font-size: 0.98rem;
+}
+
+.prose th,
+.prose td {
+  min-width: 8rem;
+  border-bottom: 1px solid var(--color-line);
+  padding: 0.7rem 0.85rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prose th {
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.prose tr:last-child td {
+  border-bottom: 0;
+}
+
+#lightbox {
+  width: min(1100px, calc(100vw - 2rem));
+  max-height: calc(100vh - 2rem);
+  padding: 0.75rem;
+  border: 0;
+  border-radius: 1.25rem;
+  background: #111;
+}
+
+#lightbox::backdrop {
+  background: rgb(17 17 17 / 0.82);
+}
+
+#lightbox img {
+  display: block;
+  width: 100%;
+  max-height: calc(100vh - 6rem);
+  object-fit: contain;
+}
+
+#lightbox button {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  border-radius: 999px;
+  background: white;
+  color: var(--color-ink);
+  padding: 0.35rem 0.8rem;
+  font-weight: 700;
+}

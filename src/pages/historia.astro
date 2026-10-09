@@ -1,0 +1,17 @@
+---
+import { getEntry, render } from 'astro:content';
+import Article from '../layouts/Article.astro';
+import Gallery from '../components/Gallery.astro';
+
+const entry = await getEntry('pages', 'historia');
+if (!entry) throw new Error('Historia puuttuu');
+const { Content } = await render(entry);
+const galleries = entry.data.galleries ?? [];
+---
+
+<Article title="Kannelkylän historia" eyebrow="Vuodesta 1974" wide>
+  <div class="prose mt-8 max-w-3xl">
+    <Content />
+  </div>
+  {galleries.map((gallery) => <Gallery title={gallery.title} images={gallery.images} />)}
+</Article>

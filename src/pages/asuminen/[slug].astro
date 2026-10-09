@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import Article from '../../layouts/Article.astro';
+import { categories } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const living = await getCollection('living');
+  return living.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const category = categories.find((item) => item.id === entry.data.category);
+---
+
+<Article title={entry.data.title} eyebrow={category?.label ?? 'Asuminen'} wide>
+  <div class="prose mt-8 max-w-3xl">
+    <Content />
+  </div>
+  <p class="mt-12">
+    <a href="/asuminen" class="font-semibold text-moss underline-offset-4 hover:underline">← Asuminen ja eläminen</a>
+  </p>
+</Article>

@@ -1,0 +1,25 @@
+---
+import { getCollection, render } from 'astro:content';
+import Article from '../../layouts/Article.astro';
+import { formatDate } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const news = await getCollection('news');
+  return news.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<Article title={entry.data.title} eyebrow={formatDate(entry.data.date)}>
+  <div class="prose mt-8">
+    <Content />
+  </div>
+  <p class="mt-12">
+    <a href="/uutiset" class="font-semibold text-moss underline-offset-4 hover:underline">← Kaikki uutiset</a>
+  </p>
+</Article>

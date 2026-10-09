@@ -1,0 +1,83 @@
+---
+import '../styles/global.css';
+import { ClientRouter } from 'astro:transitions';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  description?: string;
+  home?: boolean;
+}
+
+const {
+  title,
+  description = 'Kannelkylä on pientaloalue Helsingin Kannelmäessä. Asunto Oy Kannelmäen Pientalot.',
+  home = false,
+} = Astro.props;
+
+const pageTitle = home ? 'Kannelkylä' : `${title} · Kannelkylä`;
+---
+
+<!doctype html>
+<html lang="fi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,520;9..144,640&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>{pageTitle}</title>
+    <ClientRouter />
+  </head>
+  <body class="min-h-screen">
+    <a
+      href="#sisalto"
+      class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-cream focus:px-4 focus:py-2"
+    >
+      Siirry sisältöön
+    </a>
+    <div class="bg-forest px-4 py-2 text-center text-sm leading-snug text-cream">
+      <p>Luonnos toimikunnalle. Ei vielä julkinen sivusto.</p>
+    </div>
+    <Header />
+    <main id="sisalto">
+      <slot />
+    </main>
+    <Footer />
+    <dialog id="lightbox" aria-label="Kuva">
+      <form method="dialog">
+        <button type="submit">Sulje</button>
+      </form>
+      <img src="" alt="" />
+    </dialog>
+    <script>
+      document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+
+        const box = document.getElementById('lightbox');
+        if (!(box instanceof HTMLDialogElement)) return;
+
+        if (target === box) {
+          box.close();
+          return;
+        }
+
+        const button = target.closest('[data-lightbox]');
+        if (!button) return;
+        const img = box.querySelector('img');
+        if (!img) return;
+        img.src = button.getAttribute('data-lightbox') || '';
+        img.alt = button.getAttribute('data-caption') || '';
+        box.showModal();
+      });
+    </script>
+  </body>
+</html>

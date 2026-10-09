@@ -1,0 +1,68 @@
+---
+import { isCurrent, nav } from '../lib/site';
+
+const path = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-40 border-b border-line/80 bg-paper/90 backdrop-blur-md">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-3">
+    <a href="/" class="shrink-0">
+      <span class="block font-serif text-[1.7rem] leading-none tracking-tight text-forest">Kannelkylä</span>
+      <span class="mt-1 block text-xs tracking-wide text-muted">Asunto Oy Kannelmäen Pientalot</span>
+    </a>
+
+    <details class="relative lg:hidden">
+      <summary
+        class="cursor-pointer list-none rounded-full border border-line bg-cream px-4 py-2 text-sm font-semibold text-forest [&::-webkit-details-marker]:hidden"
+      >
+        Valikko
+      </summary>
+      <nav
+        aria-label="Sivut"
+        class="absolute right-0 z-50 mt-2 w-64 rounded-2xl border border-line bg-cream p-2 shadow-xl shadow-forest/10"
+      >
+        <ul>
+          {
+            nav.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  aria-current={isCurrent(path, item.href) ? 'page' : undefined}
+                  class:list={[
+                    'block rounded-xl px-3 py-2.5 text-[1.02rem]',
+                    isCurrent(path, item.href) ? 'bg-forest text-cream' : 'text-ink hover:bg-leaf',
+                  ]}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+    </details>
+
+    <nav aria-label="Sivut" class="hidden lg:block">
+      <ul class="flex flex-wrap justify-end gap-x-1 gap-y-1">
+        {
+          nav.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                aria-current={isCurrent(path, item.href) ? 'page' : undefined}
+                class:list={[
+                  'rounded-full px-3 py-1.5 text-[0.98rem]',
+                  isCurrent(path, item.href)
+                    ? 'bg-forest text-cream'
+                    : 'text-ink hover:bg-cream',
+                ]}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
