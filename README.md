@@ -52,4 +52,9 @@ Kun `kannelkyla.fi` siirretään:
 - Ei kirjautumista, ei lomakkeita, ei saunavuorojen varausta.
 - TV-kanavat-sivu nykyisellä sivustolla palauttaa virheen, joten sitä ei kopioitu.
 - Osa vuoden 2017 tiedotteista on yhä PDF-linkkejä vanhalle palvelimelle.
-- Yläreunan vihreä palkki kertoo, että tämä on yhä luonnos toimikunnalle.
+
+## Tarkistukset
+
+Push `main`-haaraan ja jokainen pull request ajavat yksikkötestit ja kaksi buildia: paikallisen juuren ja julkaistun polun `/kannelkyla`. Sen jälkeen tarkistetaan, että sivujen linkit ja kuvat löytyvät buildista. Sivusto julkaistaan vasta, kun tämä menee läpi.
+
+Dependabot avaa riippuvuuspäivityksille pull requestin viikoittain. Patch- ja minor-päivitykset yhdistyvät itsestään, jos tarkistukset menevät läpi. Major-päivitys jää odottamaan manuaalista hyväksyntää.

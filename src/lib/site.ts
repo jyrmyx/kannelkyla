@@ -37,8 +37,8 @@ export function formatDate(iso: string) {
   return `${day}.${month}.${year}`;
 }
 
-/** Prefix a site path with the deploy base. Locally that base is `/`. GitHub Pages uses `/kannelkyla/`. */
-export function url(path: string) {
+/** Prefix a site path with a deploy base. `/` stays at the root. `/kannelkyla` becomes `/kannelkyla/...`. */
+export function prefixPath(path: string, base: string) {
   if (!path.startsWith('/') || path.startsWith('//')) return path;
   const hashIndex = path.indexOf('#');
   const hash = hashIndex === -1 ? '' : path.slice(hashIndex);
@@ -46,10 +46,14 @@ export function url(path: string) {
   const queryIndex = bare.indexOf('?');
   const query = queryIndex === -1 ? '' : bare.slice(queryIndex);
   const pathname = queryIndex === -1 ? bare : bare.slice(0, queryIndex);
-  const base = import.meta.env.BASE_URL;
-  const prefix = base.endsWith('/') ? base : `${base}/`;
+  const prefix = !base || base === '/' ? '/' : base.endsWith('/') ? base : `${base}/`;
   if (pathname === '/') return `${prefix}${query}${hash}`;
   return `${prefix}${pathname.slice(1)}${query}${hash}`;
+}
+
+/** Prefix a site path with the deploy base. Locally that base is `/`. GitHub Pages uses `/kannelkyla/`. */
+export function url(path: string) {
+  return prefixPath(path, import.meta.env.BASE_URL);
 }
 
 function withSlash(path: string) {
@@ -57,10 +61,15 @@ function withSlash(path: string) {
   return path.endsWith('/') ? path : `${path}/`;
 }
 
-export function isCurrent(pathname: string, href: string) {
+/** `href` is already prefixed. Home matches only the base, so a section does not highlight Etusivu. */
+export function pathIsCurrent(pathname: string, href: string, base: string) {
   const current = withSlash(pathname);
   const target = withSlash(href);
-  const home = withSlash(import.meta.env.BASE_URL);
+  const home = withSlash(!base || base === '/' ? '/' : base);
   if (target === home) return current === home;
   return current === target || current.startsWith(target);
+}
+
+export function isCurrent(pathname: string, href: string) {
+  return pathIsCurrent(pathname, href, import.meta.env.BASE_URL);
 }
