@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { categories, formatDate } from '../lib/site';
+import { categories, formatDate, url } from '../lib/site';
 
 const news = (await getCollection('news')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 const latest = news.slice(0, 4);
@@ -9,10 +9,10 @@ const living = await getCollection('living');
 
 const quick = ['pesutupa', 'kerhohuone', 'saunavuorot', 'kuntosali', 'jatehuolto', 'kylakartta']
   .map((id) => {
-    if (id === 'kylakartta') return { href: '/kylakartta', title: 'Kyläkartta', description: 'Talojen tunnukset ja pysäköinti.' };
+    if (id === 'kylakartta') return { href: url('/kylakartta'), title: 'Kyläkartta', description: 'Talojen tunnukset ja pysäköinti.' };
     const entry = living.find((item) => item.id === id);
     return entry
-      ? { href: `/asuminen/${entry.id}`, title: entry.data.title, description: entry.data.description }
+      ? { href: url(`/asuminen/${entry.id}`), title: entry.data.title, description: entry.data.description }
       : null;
   })
   .filter((item) => item !== null);
@@ -28,7 +28,7 @@ const stats = [
 <Base title="Kannelkylä" home>
   <section class="relative">
     <img
-      src="/media/kevat.jpg"
+      src={url('/media/kevat.jpg')}
       alt="Omenapuun kukkia Kannelkylässä. Taustalla näkyy punainen puutalo."
       class="h-[62vh] min-h-[420px] w-full object-cover object-[center_35%]"
     />
@@ -62,13 +62,13 @@ const stats = [
     <div>
       <div class="flex items-end justify-between gap-4">
         <h2 class="font-serif text-4xl tracking-tight text-ink">Uutiset</h2>
-        <a href="/uutiset" class="text-sm font-semibold text-moss underline-offset-4 hover:underline">Kaikki uutiset</a>
+        <a href={url('/uutiset')} class="text-sm font-semibold text-moss underline-offset-4 hover:underline">Kaikki uutiset</a>
       </div>
       <ul class="mt-6 divide-y divide-line border-y border-line">
         {
           latest.map((item) => (
             <li>
-              <a href={`/uutiset/${item.id}`} class="group block py-5">
+              <a href={url(`/uutiset/${item.id}`)} class="group block py-5">
                 <time datetime={item.data.date} class="text-sm font-semibold text-moss">
                   {formatDate(item.data.date)}
                 </time>
@@ -97,7 +97,7 @@ const stats = [
         </div>
       </dl>
       <a
-        href="/yhteystiedot"
+        href={url('/yhteystiedot')}
         class="mt-8 inline-flex rounded-full bg-cream px-4 py-2 text-sm font-semibold text-forest"
       >
         Kaikki yhteystiedot
@@ -113,7 +113,7 @@ const stats = [
     <div class="mt-8 grid gap-4 md:grid-cols-2">
       {
         categories.map((category) => (
-          <a href={`/asuminen#${category.id}`} class="rounded-[1.5rem] border border-line bg-cream p-6 hover:border-moss">
+          <a href={url(`/asuminen#${category.id}`)} class="rounded-[1.5rem] border border-line bg-cream p-6 hover:border-moss">
             <p class="font-serif text-2xl text-forest">{category.label}</p>
             <p class="mt-2 text-muted">{category.text}</p>
           </a>
@@ -135,8 +135,8 @@ const stats = [
   </section>
 
   <section class="mx-auto mt-20 grid max-w-6xl items-center gap-8 px-5 lg:grid-cols-2">
-    <a href="/kylakartta" class="overflow-hidden rounded-[1.75rem] bg-leaf">
-      <img src="/media/kylankartta2.jpg" alt="Kannelkylän kartta, jossa talot 12 A–14 T." class="w-full" />
+    <a href={url('/kylakartta')} class="overflow-hidden rounded-[1.75rem] bg-leaf">
+      <img src={url('/media/kylankartta2.jpg')} alt="Kannelkylän kartta, jossa talot 12 A–14 T." class="w-full" />
     </a>
     <div>
       <p class="eyebrow">Löydä perille</p>
@@ -145,7 +145,7 @@ const stats = [
         Kylässä on 31 asuinrakennusta, tunnuksiltaan 12 A–12 N ja 14 A–14 T. Osoitteeseen kuuluu myös kirjain.
         Taloja 12 J, 14 J ja 14 Q ei ole.
       </p>
-      <a href="/kylakartta" class="mt-6 inline-flex font-semibold text-moss underline-offset-4 hover:underline">
+      <a href={url('/kylakartta')} class="mt-6 inline-flex font-semibold text-moss underline-offset-4 hover:underline">
         Avaa kartta ja PDF
       </a>
     </div>
@@ -157,7 +157,7 @@ const stats = [
         <p class="eyebrow">1970-luku</p>
         <h2 class="mt-2 font-serif text-4xl tracking-tight">Kylä rakenteilla</h2>
       </div>
-      <a href="/historia" class="text-sm font-semibold text-moss underline-offset-4 hover:underline">Koko historia</a>
+      <a href={url('/historia')} class="text-sm font-semibold text-moss underline-offset-4 hover:underline">Koko historia</a>
     </div>
     <ul class="mt-6 grid gap-3 sm:grid-cols-3">
       {
@@ -167,9 +167,9 @@ const stats = [
           '/media/70s/1403504485137_1_orig.jpg',
         ].map((src, index) => (
           <li>
-            <a href="/historia">
+            <a href={url('/historia')}>
               <img
-                src={src}
+                src={url(src)}
                 alt={`Mustavalkoinen kuva Kannelkylästä 1970-luvulta, ${index + 1}`}
                 class="aspect-[4/3] w-full rounded-[1.4rem] object-cover"
               />

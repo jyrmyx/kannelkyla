@@ -1,5 +1,5 @@
 ---
-import { nav } from '../lib/site';
+import { nav, url } from '../lib/site';
 ---
 
 <footer class="mt-20 bg-forest text-cream">
@@ -18,7 +18,7 @@ import { nav } from '../lib/site';
         {
           nav.map((item) => (
             <li>
-              <a href={item.href} class="text-cream/90 underline-offset-4 hover:underline">
+              <a href={url(item.href)} class="text-cream/90 underline-offset-4 hover:underline">
                 {item.label}
               </a>
             </li>
@@ -47,7 +47,7 @@ import { nav } from '../lib/site';
   </div>
   <div class="border-t border-white/10">
     <p class="mx-auto max-w-6xl px-5 py-5 text-sm text-cream/60">
-      Sisältö ja kuvat ovat taloyhtiön nykyiseltä sivustolta. Tämä versio on paikallinen luonnos.
+      Sisältö ja kuvat ovat taloyhtiön nykyiseltä sivustolta. Tämä versio on luonnos toimikunnalle.
     </p>
   </div>
 </footer>

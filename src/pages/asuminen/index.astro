@@ -1,7 +1,7 @@
 ---
 import { getCollection, getEntry, render } from 'astro:content';
 import Article from '../../layouts/Article.astro';
-import { categories } from '../../lib/site';
+import { categories, url } from '../../lib/site';
 
 const entry = await getEntry('pages', 'asuminen');
 if (!entry) throw new Error('Asuminen-sivu puuttuu');
@@ -22,7 +22,7 @@ const living = (await getCollection('living')).sort((a, b) => a.data.order - b.d
               {items.map((item) => (
                 <li>
                   <a
-                    href={`/asuminen/${item.id}`}
+                    href={url(`/asuminen/${item.id}`)}
                     class="block h-full rounded-2xl border border-line bg-cream px-5 py-4 hover:border-moss"
                   >
                     <p class="font-serif text-2xl text-ink">{item.data.title}</p>

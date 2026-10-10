@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Article from '../../layouts/Article.astro';
-import { formatDate } from '../../lib/site';
+import { formatDate, url } from '../../lib/site';
 
 const news = (await getCollection('news')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 ---
@@ -11,7 +11,7 @@ const news = (await getCollection('news')).sort((a, b) => b.data.date.localeComp
     {
       news.map((item) => (
         <li>
-          <a href={`/uutiset/${item.id}`} class="group block py-6">
+          <a href={url(`/uutiset/${item.id}`)} class="group block py-6">
             <time datetime={item.data.date} class="text-sm font-semibold text-moss">
               {formatDate(item.data.date)}
             </time>

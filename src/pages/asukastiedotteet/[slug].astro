@@ -1,6 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Article from '../../layouts/Article.astro';
+import { url } from '../../lib/site';
 
 export async function getStaticPaths() {
   const bulletins = await getCollection('bulletins');
@@ -19,7 +20,7 @@ const { Content } = await render(entry);
     <Content />
   </div>
   <p class="mt-12">
-    <a href="/asukastiedotteet" class="font-semibold text-moss underline-offset-4 hover:underline">
+    <a href={url('/asukastiedotteet')} class="font-semibold text-moss underline-offset-4 hover:underline">
       ← Kaikki tiedotteet
     </a>
   </p>

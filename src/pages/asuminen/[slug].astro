@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Article from '../../layouts/Article.astro';
-import { categories } from '../../lib/site';
+import { categories, url } from '../../lib/site';
 
 export async function getStaticPaths() {
   const living = await getCollection('living');
@@ -21,6 +21,6 @@ const category = categories.find((item) => item.id === entry.data.category);
     <Content />
   </div>
   <p class="mt-12">
-    <a href="/asuminen" class="font-semibold text-moss underline-offset-4 hover:underline">← Asuminen ja eläminen</a>
+    <a href={url('/asuminen')} class="font-semibold text-moss underline-offset-4 hover:underline">← Asuminen ja eläminen</a>
   </p>
 </Article>

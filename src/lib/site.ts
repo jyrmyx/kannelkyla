@@ -37,7 +37,30 @@ export function formatDate(iso: string) {
   return `${day}.${month}.${year}`;
 }
 
-export function isCurrent(path: string, href: string) {
-  if (href === '/') return path === '/';
-  return path === href || path.startsWith(`${href}/`);
+/** Prefix a site path with the deploy base. Locally that base is `/`. GitHub Pages uses `/kannelkyla/`. */
+export function url(path: string) {
+  if (!path.startsWith('/') || path.startsWith('//')) return path;
+  const hashIndex = path.indexOf('#');
+  const hash = hashIndex === -1 ? '' : path.slice(hashIndex);
+  const bare = hashIndex === -1 ? path : path.slice(0, hashIndex);
+  const queryIndex = bare.indexOf('?');
+  const query = queryIndex === -1 ? '' : bare.slice(queryIndex);
+  const pathname = queryIndex === -1 ? bare : bare.slice(0, queryIndex);
+  const base = import.meta.env.BASE_URL;
+  const prefix = base.endsWith('/') ? base : `${base}/`;
+  if (pathname === '/') return `${prefix}${query}${hash}`;
+  return `${prefix}${pathname.slice(1)}${query}${hash}`;
+}
+
+function withSlash(path: string) {
+  if (path === '/' || path === '') return '/';
+  return path.endsWith('/') ? path : `${path}/`;
+}
+
+export function isCurrent(pathname: string, href: string) {
+  const current = withSlash(pathname);
+  const target = withSlash(href);
+  const home = withSlash(import.meta.env.BASE_URL);
+  if (target === home) return current === home;
+  return current === target || current.startsWith(target);
 }

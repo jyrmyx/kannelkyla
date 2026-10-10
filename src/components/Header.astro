@@ -1,12 +1,12 @@
 ---
-import { isCurrent, nav } from '../lib/site';
+import { isCurrent, nav, url } from '../lib/site';
 
 const path = Astro.url.pathname;
 ---
 
 <header class="sticky top-0 z-40 border-b border-line/80 bg-paper/90 backdrop-blur-md">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-6 px-5 py-3">
-    <a href="/" class="shrink-0">
+    <a href={url('/')} class="shrink-0">
       <span class="block font-serif text-[1.7rem] leading-none tracking-tight text-forest">Kannelkylä</span>
       <span class="mt-1 block text-xs tracking-wide text-muted">Asunto Oy Kannelmäen Pientalot</span>
     </a>
@@ -26,11 +26,11 @@ const path = Astro.url.pathname;
             nav.map((item) => (
               <li>
                 <a
-                  href={item.href}
-                  aria-current={isCurrent(path, item.href) ? 'page' : undefined}
+                  href={url(item.href)}
+                  aria-current={isCurrent(path, url(item.href)) ? 'page' : undefined}
                   class:list={[
                     'block rounded-xl px-3 py-2.5 text-[1.02rem]',
-                    isCurrent(path, item.href) ? 'bg-forest text-cream' : 'text-ink hover:bg-leaf',
+                    isCurrent(path, url(item.href)) ? 'bg-forest text-cream' : 'text-ink hover:bg-leaf',
                   ]}
                 >
                   {item.label}
@@ -48,11 +48,11 @@ const path = Astro.url.pathname;
           nav.map((item) => (
             <li>
               <a
-                href={item.href}
-                aria-current={isCurrent(path, item.href) ? 'page' : undefined}
+                href={url(item.href)}
+                aria-current={isCurrent(path, url(item.href)) ? 'page' : undefined}
                 class:list={[
                   'rounded-full px-3 py-1.5 text-[0.98rem]',
-                  isCurrent(path, item.href)
+                  isCurrent(path, url(item.href))
                     ? 'bg-forest text-cream'
                     : 'text-ink hover:bg-cream',
                 ]}

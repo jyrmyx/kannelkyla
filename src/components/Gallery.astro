@@ -1,4 +1,6 @@
 ---
+import { url } from '../lib/site';
+
 interface Props {
   title: string;
   images: string[];
@@ -16,12 +18,12 @@ const { title, images } = Astro.props;
           <button
             type="button"
             class="group block w-full overflow-hidden rounded-2xl bg-line"
-            data-lightbox={src}
+            data-lightbox={url(src)}
             data-caption={`${title}, kuva ${index + 1}`}
             aria-label={`Avaa ${title}, kuva ${index + 1}`}
           >
             <img
-              src={src}
+              src={url(src)}
               alt=""
               class="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
               loading="lazy"
