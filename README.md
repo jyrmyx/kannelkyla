@@ -1,6 +1,8 @@
 # Kannelkylä
 
-Luonnos Asunto Oy Kannelmäen Pientalojen sivustosta. Sisältö ja kuvat on haettu nykyiseltä sivustolta [kannelkyla.fi](https://www.kannelkyla.fi/). Julkaistu versio on osoitteessa <https://jyrmyx.github.io/kannelkyla/>.
+Luonnos Asunto Oy Kannelmäen Pientalojen sivustosta. Sisältö ja kuvat on haettu nykyiseltä sivustolta [kannelkyla.fi](https://www.kannelkyla.fi/). Julkaistu versio on osoitteessa <https://ilama.dev/kannelkyla/>.
+
+`jyrmyx.github.io/kannelkyla` ohjaa samaan osoitteeseen, koska GitHub-käyttäjäsivusto käyttää jo domainia `ilama.dev`.
 
 `kannelkyla.fi` osoittaa yhä Kotisivukoneeseen. Domainia ei ole vaihdettu.
 
