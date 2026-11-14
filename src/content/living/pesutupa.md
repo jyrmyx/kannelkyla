@@ -5,23 +5,22 @@ description: "Pesutupa, kuivaushuone ja mankeli."
 order: "1"
 ---
 
-Pesutupa on alueen keskellä olevassa huoltorakennuksessa. Pesutuvassa on asukkaiden käytössä kaksi 7,5 kilogramman ja yksi 10 kilogramman pyykkikone. Pesutuvassa on myös kaksi kuivaisrumpua, linko sekä mankeli. Myös pienen maton pesu on mahdollista.
+Pesutupa on alueen keskellä olevassa huoltorakennuksessa. Pesutuvassa on asukkaiden käytössä kaksi 7,5 kilogramman ja yksi 10 kilogramman pyykkikone. Pesutuvassa on myös kaksi kuivausrumpua sekä mankeli. Myös pienen maton pesu pesualtaassa on mahdollista. Mattojen pesu koneissa on kielletty, samoin kaarituellisten rintaliivien.
 
-Vuoro pesutupaan varataan sen aulassa olevan kalenterin avulla. Kalenterissa on jokaiselle osakkaalle oma lukko, joka kiinnitetään haluttuun ajankohtaan. Vuoron jälkeen lukko siirretään pois.
+Vuoro pesutupaan varataan pesutuvan pöydällä olevan varauskalenterin avulla. Kirjoita varauksen kohdalle huoneistonumerosi. Kerralla voi varata vain kahden tunnin vuoron, ja jotta vuoroja mahtuu päivään tarvittaessa maksimimäärä, varataan vuorot alkamaan parillisin tunnein, esim. klo 10-12 ja 12-14. Oman vuoron päätyttyä voi vielä käyttää kuivausrumpuja ja mankelia, kunhan seuraava pyykkääjä pääsee pesuohjelmansa päätyttyä käyttämään niitä.
 
-Uuden asukkaan pitäisi saada pyykkituvan avaimet edelliseltä asukkaalta, tarvittaessa vara-avaimia huoneistokohtaisiin lukkoihin löytyy tarvittaessa huoltomiehen kautta (yhteys Kotikadun asiakaspalveluun).
+Uuden asukkaan pitäisi saada pyykkituvan avaimet edelliseltä asukkaalta, tarvittaessa puuttuvat avaimet voi pyytää huoltomiehen kautta (yhteys Kotikadun asiakaspalveluun). Pyykkituvan avaimia tarvitsee myös kerhohuoneen sekä kuntosalin avainlokeroita käyttääkseen. Pyykkituvan avaimilla aukeaa myös maitokärryjen lukko sekä portti pyykinkuivatusulkoalueelle, jossa on myös asukkaiden lainattavaksi kottikärryjä, tikkaita sekä työnnettäviä ruohonleikkureita.
 
-Pyykkikoneet toimivat puhelinmaksulla, sekä matka- että lankapuhelimella (huom! ei kuitenkaan prepaid-liittymillä tai jos liittymässä on asiointiesto) ja yhden koneellisen hinta on 1,50€. Maksu veloitetaan puhelinlaskussa.
+Pyykkikoneet toimivat lähimaksulla, esimerkiksi pankkikortilla tai puhelimella. Yhden koneellisen hinta on 2€.
 
  **Toimi näin:**
 
 1. Laita pyykki koneeseen.
-2. Laita pesuaine koneeseen (luukku koneen päällä) ja valitse sopiva pesuohjelma.
-3. Soita numeroon 06060063321 ja odota että puhelu päättyy. Soittamisen jälkeen seinällä olevaan Talpetin laitteeseen syttyy keltainen merkkivalo merkiksi soiton onnistumisesta.
-4. Valitse mitä konetta haluat käyttää painamalla Talpet-laitteesta kyseisen koneen numeroa (kone 1 = lähinnä ikkunaa oleva iso kone).
-5. Kun laiteen lamppu sammuu, voit käynnistää pesukoneen sen virtanapista.
-6. Käynnistääksesi toisen pesukoneen toista yllä olevat kohdat (=yksi puhelu per koneellinen).
-7. Ennen kuivausrumpua pyykit kannattaa käyttää erillisessä punaisessa lingossa. Lingon virta saattaa olla sammutettuna, virtakytkin on seinän takana naulakon vieressä. Kuivausrumpua käyttäessäsi muista tyhjentää nukkasihti harjalla (luukku koneen edessä alhaalla).Jos käytät kuivaushuonetta, muista noutaa pyykkisi ripeästi, jotta seuraavienkin pyykkäreiden pyykit mahtuvat kuivumaan. Esim. lakanapyykki kuivuu 2-4 tunnissa, kun puhallin on päällä.
+2. Laita pesuaine koneeseen (luukku koneen päällä) ja valitse sopiva pesuohjelma. Vältä hajustettuja pesuaineita.
+3. Valitse haluamasi kone seinällä olevasta maksupäätteestä ja suorita lähimaksu. Maksun onnistuttua valitse vielä mitä konetta haluat käyttää painamalla Talpet-laitteesta kyseisen koneen numeroa (kone 1 = lähinnä ikkunaa oleva iso kone).
+4. Kun laiteen lamppu sammuu, voit käynnistää pesukoneen sen virtanapista.
+5. Käynnistääksesi toisen pesukoneen toista yllä olevat kohdat (=yksi maksu per koneellinen).
+6. Pyykkituvassa oleva erillinen punainen linko ei valitettavasti ole enää käytössä, sitä ei kannattanut enää korjata eikä uusia myydä enää järkevään hintaan. Kuivausrumpua käyttäessäsi muista tyhjentää nukkasihti harjalla (luukku koneen edessä alhaalla). Jos käytät kuivaushuonetta, muista noutaa pyykkisi ripeästi, jotta seuraavienkin pyykkäreiden pyykit mahtuvat kuivumaan. Esim. lakanapyykki kuivuu 2-4 tunnissa, kun puhallin on päällä.
 
 Valkopesu (95°c) 51-55 min
 
