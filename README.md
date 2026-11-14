@@ -43,6 +43,8 @@ Paikallinen kehitys ja julkaistu sivu käyttävät osoitteen juurta `/`. `public
 
 ## Tarkistukset
 
-Push `main`-haaraan ja jokainen pull request ajavat yksikkötestit ja kaksi buildia: julkaistun juuren ja vanhan polun `/kannelkyla`. Sen jälkeen tarkistetaan, että sivujen linkit ja kuvat löytyvät buildista. Sivusto julkaistaan juuribuildista vasta, kun tämä menee läpi.
+Push `main`-haaraan ja jokainen pull request ajavat yksikkötestit ja kaksi buildia: julkaistun juuren ja vanhan polun `/kannelkyla`. Sen jälkeen tarkistetaan, että sivujen linkit ja kuvat löytyvät buildista, ja Playwright avaa julkaistun juuribuildin selaimessa. Testit varmistavat pääsivut, valikon, kuvat, kyläkartan, etusivun sijaintilinkin, 404-sivun ja historian kuvagallerian. Sivusto julkaistaan juuribuildista vasta, kun tämä menee läpi.
+
+`npm run test:ui` ajaa samat selaintestit paikallisesti, kun julkaistu juuribuild on valmis.
 
 Dependabot avaa riippuvuuspäivityksille pull requestin viikoittain. Patch- ja minor-päivitykset yhdistyvät itsestään, jos tarkistukset menevät läpi. Major-päivitys jää odottamaan manuaalista hyväksyntää.

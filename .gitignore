@@ -26,3 +26,9 @@ wordpress/import/content.json
 
 # jetbrains setting folder
 .idea/
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

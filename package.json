@@ -11,7 +11,11 @@
     "preview": "astro preview",
     "test": "node --experimental-strip-types --test src/lib/site.test.ts",
     "check:dist": "node scripts/check-dist.mjs",
+    "test:ui": "playwright test",
     "astro": "astro"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.3.5",
