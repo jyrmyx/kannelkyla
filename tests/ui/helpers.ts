@@ -3,7 +3,7 @@ import { expect, type Page } from '@playwright/test';
 export const pages = [
   { path: '/', heading: 'Tervetuloa Kannelkylään' },
   { path: '/uutiset', heading: 'Uutiset' },
-  { path: '/asukastiedotteet', heading: 'Asukastiedotteet' },
+  { path: '/asukastiedotteet', heading: 'Tiedotteet' },
   { path: '/asuminen', heading: 'Asuminen ja eläminen' },
   { path: '/asuminen/pesutupa', heading: 'Pesutupa' },
   { path: '/historia', heading: 'Kannelkylän historia' },

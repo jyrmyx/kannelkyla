@@ -23,9 +23,9 @@ Sisältö on Markdown-tiedostoja kansiossa `src/content/`. Ylläpitäjä muokkaa
 
 ## Mitä tässä on
 
-Nykyisen Kotisivukone-sivuston osiot: etusivu, uutiset, asukastiedotteet, asuminen ja eläminen, historia kuvineen, kyläkartta, perustiedot ja yhteystiedot. Tekstit ovat alkuperäisiä. Kuvat ovat taloyhtiön omia kuvia nykyiseltä sivustolta.
+Sivuston osiot: etusivu, uutiset, tiedotteet, asuminen ja eläminen, historia kuvineen, kyläkartta, perustiedot ja yhteystiedot. Tiedotteet-sivu ohjaa Avaa.io-taloyhtiöportaaliin. Tekstit ovat pääosin vanhalta Kotisivukone-sivustolta, ja kuvat ovat taloyhtiön omia.
 
-PDF-tiedotteet, korjausilmoitus ja Avotakan juttu ovat mukana kansiossa `public/tiedostot`. Kyläkartta-PDF on kansiossa `public/media`.
+Korjausilmoitus, korjausohjeet ja Avotakan juttu ovat mukana kansiossa `public/tiedostot`. Kyläkartta-PDF on kansiossa `public/media`.
 
 ## Miksi tämä pino
 
@@ -39,7 +39,7 @@ Paikallinen kehitys ja julkaistu sivu käyttävät osoitteen juurta `/`. `public
 
 - Ei kirjautumista, ei lomakkeita, ei saunavuorojen varausta.
 - TV-kanavat-sivu vanhalla Kotisivukone-sivustolla palauttaa virheen, joten sitä ei kopioitu.
-- Vuoden 2017 tiedotteet ovat PDF-tiedostoja sivuston omassa kansiossa.
+- Ei vanhoja asukastiedotteita: ajankohtaiset tiedotteet ovat Avaa.io-portaalissa, ja Tiedotteet-sivu kertoo, miten tunnukset saa.
 
 ## Tarkistukset
 

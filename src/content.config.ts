@@ -20,14 +20,6 @@ const living = defineCollection({
   }),
 });
 
-const bulletins = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/bulletins' }),
-  schema: z.object({
-    title: z.string(),
-    summary: z.string(),
-  }),
-});
-
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
   schema: z.object({
@@ -43,4 +35,4 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { news, living, bulletins, pages };
+export const collections = { news, living, pages };
