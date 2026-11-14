@@ -4,15 +4,14 @@ import tailwindcss from '@tailwindcss/vite';
 import { satteri } from '@astrojs/markdown-satteri';
 import { defineHastPlugin } from 'satteri';
 
-// GitHub Actions sets PAGES_BASE=/kannelkyla. Local dev and a future custom
-// domain stay at /. A project site is served under the repo name; a custom
-// domain is served at the domain root, so the base has to go away then.
+// The published site is https://www.kannelkyla.fi, served at the domain root.
+// PAGES_BASE is set only when checking the old /kannelkyla project path.
 const base = pagesBase(process.env.PAGES_BASE);
 const basePrefix = base === '/' ? '' : base;
 
 /** @type {import('astro').AstroUserConfig} */
 const config = {
-  site: process.env.SITE ?? 'https://jyrmyx.github.io',
+  site: process.env.SITE ?? 'https://www.kannelkyla.fi',
   base,
   vite: {
     plugins: [tailwindcss()],

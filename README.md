@@ -1,10 +1,6 @@
 # Kannelkylä
 
-Luonnos Asunto Oy Kannelmäen Pientalojen sivustosta. Sisältö ja kuvat on haettu nykyiseltä sivustolta [kannelkyla.fi](https://www.kannelkyla.fi/). Julkaistu versio on osoitteessa <https://ilama.dev/kannelkyla/>.
-
-`jyrmyx.github.io/kannelkyla` ohjaa samaan osoitteeseen, koska GitHub-käyttäjäsivusto käyttää jo domainia `ilama.dev`.
-
-`kannelkyla.fi` osoittaa yhä Kotisivukoneeseen. Domainia ei ole vaihdettu.
+Asunto Oy Kannelmäen Pientalojen sivusto. Sisältö ja kuvat on haettu aiemmalta Kotisivukone-sivustolta. Julkaistu versio on osoitteessa <https://www.kannelkyla.fi/>, kun nimipalvelun `www`-tietue osoittaa GitHub Pagesiin.
 
 ## Käynnistys
 
@@ -35,17 +31,9 @@ PDF-tiedotteet ja lomakkeet (korjausilmoitus, terassiohje, Avotakan juttu, pohja
 
 - **Astro 7** tekee staattiset sivut. Ei palvelinta, ei tietokantaa, ei kuukausimaksua.
 - **Tailwind CSS 4** pitää ulkoasun yhdessä paikassa.
-- **GitHub Pages** julkaisee ilmaiseksi. Oma domain voidaan osoittaa myöhemmin samaan buildiin.
+- **GitHub Pages** julkaisee ilmaiseksi osoitteessa `www.kannelkyla.fi`.
 
-Paikallinen kehitys käyttää osoitteen juurta `/`. Julkaistu sivu on polussa `/kannelkyla`, koska GitHub Pages -projektisivu toimii niin. Actions asettaa `PAGES_BASE=/kannelkyla`. Älä kovakoodaa sitä linkkeihin: käytä `url()`-apuria tiedostossa `src/lib/site.ts`.
-
-## Oma domain myöhemmin
-
-Kun `kannelkyla.fi` siirretään:
-
-1. Lisää `public/CNAME`, jossa on pelkkä domain.
-2. Poista workflowsta `PAGES_BASE`. GitHub Pages tarjoaa oman domainin juuresta, ei polusta `/kannelkyla`.
-3. Aseta `SITE` (tai `astro.config.mjs`:n `site`) osoitteeseen `https://kannelkyla.fi`.
+Paikallinen kehitys ja julkaistu sivu käyttävät osoitteen juurta `/`. `public/CNAME` on `www.kannelkyla.fi`. Actions asettaa `SITE=https://www.kannelkyla.fi` eikä julkaistussa buildissa ole `PAGES_BASE`-etuliitettä. Älä kovakoodaa linkkejä: käytä `url()`-apuria tiedostossa `src/lib/site.ts`.
 
 ## Mitä luonnos ei vielä tee
 
@@ -55,6 +43,6 @@ Kun `kannelkyla.fi` siirretään:
 
 ## Tarkistukset
 
-Push `main`-haaraan ja jokainen pull request ajavat yksikkötestit ja kaksi buildia: paikallisen juuren ja julkaistun polun `/kannelkyla`. Sen jälkeen tarkistetaan, että sivujen linkit ja kuvat löytyvät buildista. Sivusto julkaistaan vasta, kun tämä menee läpi.
+Push `main`-haaraan ja jokainen pull request ajavat yksikkötestit ja kaksi buildia: julkaistun juuren ja vanhan polun `/kannelkyla`. Sen jälkeen tarkistetaan, että sivujen linkit ja kuvat löytyvät buildista. Sivusto julkaistaan juuribuildista vasta, kun tämä menee läpi.
 
 Dependabot avaa riippuvuuspäivityksille pull requestin viikoittain. Patch- ja minor-päivitykset yhdistyvät itsestään, jos tarkistukset menevät läpi. Major-päivitys jää odottamaan manuaalista hyväksyntää.

@@ -95,6 +95,11 @@ if (!contacts.includes('Tanja Partanen')) failures.push('contacts page is missin
 if (!history.includes('Asuntotuotantotoimiston')) failures.push('history page is missing its opening text');
 if (cssLinks === 0) failures.push('no stylesheet link in the built pages');
 
+if (!basePrefix) {
+  const cname = (await readFile(path.join(dist, 'CNAME'), 'utf8')).trim();
+  if (cname !== 'www.kannelkyla.fi') failures.push(`CNAME is ${JSON.stringify(cname)}`);
+}
+
 if (failures.length > 0) {
   console.error(`dist check failed for base ${base}:`);
   for (const failure of failures) console.error(`- ${failure}`);

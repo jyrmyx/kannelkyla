@@ -34,19 +34,21 @@ jobs:
         run: npm ci
       - name: Unit tests
         run: npm test
-      - name: Build at the site root
-        run: npm run build
-        env:
-          PAGES_BASE: ""
-      - name: Check the root build
-        run: npm run check:dist -- --base /
-      - name: Build the GitHub Pages path
+      - name: Build the old project path
         run: npm run build
         env:
           PAGES_BASE: /kannelkyla
-      - name: Check the Pages build
+          SITE: https://www.kannelkyla.fi
+      - name: Check the project-path build
         run: npm run check:dist -- --base /kannelkyla
-      - name: Upload the Pages build
+      - name: Build the published site
+        run: npm run build
+        env:
+          PAGES_BASE: ""
+          SITE: https://www.kannelkyla.fi
+      - name: Check the published build
+        run: npm run check:dist -- --base /
+      - name: Upload the published site
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
