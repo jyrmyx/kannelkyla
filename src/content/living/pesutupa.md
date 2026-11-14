@@ -31,5 +31,3 @@ Hienopesu (40°c) 40 min
 Käsinpesuohjelma 23 min
 
 Siliävä pyykki valmistuu noin 10 minuuttia nopeammin. Pikanapin käyttö lyhentää pesuaikaa noin 7 minuuttia.
-
-![](/media/20190729_235157.jpg)
