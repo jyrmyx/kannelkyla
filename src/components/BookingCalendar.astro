@@ -1,0 +1,25 @@
+---
+// Same SuperSaaS schedule the old Kotisivukone page opened.
+const scheduleUrl = 'https://www.supersaas.com/schedule/Kkyla/Kerhohuone';
+---
+
+<section id="varauskalenteri" class="mt-8 scroll-mt-24" aria-labelledby="varauskalenteri-otsikko">
+  <h2 id="varauskalenteri-otsikko" class="font-serif text-[1.85rem] tracking-tight text-forest">
+    Varauskalenteri
+  </h2>
+  <div class="mt-5 overflow-hidden rounded-[1.1rem] border border-line bg-cream p-1.5">
+    <iframe
+      title="Kannelkylän kerhohuoneen varauskalenteri"
+      src={scheduleUrl}
+      loading="eager"
+      class="h-[800px] w-full border-0 bg-white"></iframe>
+  </div>
+  <p class="mt-3 text-sm text-muted">
+    <a
+      class="font-semibold text-moss underline decoration-1 underline-offset-[0.18em] hover:text-forest"
+      href={scheduleUrl}
+    >
+      Avaa kalenteri omalle välilehdelle
+    </a>
+  </p>
+</section>

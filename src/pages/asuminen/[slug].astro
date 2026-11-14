@@ -1,6 +1,8 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { createSatteriMarkdownProcessor } from '@astrojs/markdown-satteri';
 import Article from '../../layouts/Article.astro';
+import BookingCalendar from '../../components/BookingCalendar.astro';
 import { categories, url } from '../../lib/site';
 
 export async function getStaticPaths() {
@@ -14,12 +16,41 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 const category = categories.find((item) => item.id === entry.data.category);
+
+// The club-room page keeps its text in markdown and shows the live calendar
+// between the introduction and the booking instructions.
+const calendarMarker = '<!-- varauskalenteri -->';
+const body = entry.body ?? '';
+const calendarAt = body.indexOf(calendarMarker);
+if (entry.id === 'kerhohuone' && calendarAt === -1) {
+  throw new Error('Kerhohuoneen sivulta puuttuu varauskalenterin paikka');
+}
+
+let beforeCalendar = '';
+let afterCalendar = '';
+if (calendarAt !== -1) {
+  const processor = await createSatteriMarkdownProcessor();
+  const before = body.slice(0, calendarAt).trim();
+  const after = body.slice(calendarAt + calendarMarker.length).trim();
+  if (before) beforeCalendar = (await processor.render(before)).code;
+  if (after) afterCalendar = (await processor.render(after)).code;
+}
 ---
 
 <Article title={entry.data.title} eyebrow={category?.label ?? 'Asuminen'} wide>
-  <div class="prose mt-8 max-w-3xl">
-    <Content />
-  </div>
+  {
+    calendarAt === -1 ? (
+      <div class="prose mt-8 max-w-3xl">
+        <Content />
+      </div>
+    ) : (
+      <>
+        {beforeCalendar && <div class="prose mt-8 max-w-3xl" set:html={beforeCalendar} />}
+        <BookingCalendar />
+        {afterCalendar && <div class="prose mt-10 max-w-3xl" set:html={afterCalendar} />}
+      </>
+    )
+  }
   <p class="mt-12">
     <a href={url('/asuminen')} class="font-semibold text-moss underline-offset-4 hover:underline">← Asuminen ja eläminen</a>
   </p>
