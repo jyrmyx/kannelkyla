@@ -1,6 +1,6 @@
 # Kannelkylä
 
-Asunto Oy Kannelmäen Pientalojen sivusto. Sisältö ja kuvat on haettu aiemmalta Kotisivukone-sivustolta. Julkaistu versio on osoitteessa <https://www.kannelkyla.fi/>, kun nimipalvelun `www`-tietue osoittaa GitHub Pagesiin.
+Asunto Oy Kannelmäen Pientalojen sivusto. Sisältö ja kuvat on haettu aiemmalta Kotisivukone-sivustolta. Sivusto on julkaistu osoitteessa <https://www.kannelkyla.fi/> GitHub Pagesissa.
 
 ## Käynnistys
 
@@ -35,10 +35,10 @@ PDF-tiedotteet, korjausilmoitus ja Avotakan juttu ovat mukana kansiossa `public/
 
 Paikallinen kehitys ja julkaistu sivu käyttävät osoitteen juurta `/`. `public/CNAME` on `www.kannelkyla.fi`. Actions asettaa `SITE=https://www.kannelkyla.fi` eikä julkaistussa buildissa ole `PAGES_BASE`-etuliitettä. Älä kovakoodaa linkkejä: käytä `url()`-apuria tiedostossa `src/lib/site.ts`.
 
-## Mitä luonnos ei vielä tee
+## Mitä sivusto ei tee
 
 - Ei kirjautumista, ei lomakkeita, ei saunavuorojen varausta.
-- TV-kanavat-sivu nykyisellä sivustolla palauttaa virheen, joten sitä ei kopioitu.
+- TV-kanavat-sivu vanhalla Kotisivukone-sivustolla palauttaa virheen, joten sitä ei kopioitu.
 - Vuoden 2017 tiedotteet ovat PDF-tiedostoja sivuston omassa kansiossa.
 
 ## Tarkistukset
