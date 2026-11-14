@@ -1,17 +1,92 @@
 ---
-import { getEntry, render } from 'astro:content';
 import Article from '../../layouts/Article.astro';
+import { url } from '../../lib/site';
 
-const entry = await getEntry('pages', 'asukastiedotteet');
-if (!entry) throw new Error('Asukastiedotteet puuttuvat');
-const { Content } = await render(entry);
+const portalUrl = 'https://app.avaa.io';
+const appStoreUrl = 'https://apps.apple.com/fi/app/avaa-io-asumisen-palvelualusta/id1493923257';
+const playStoreUrl = 'https://play.google.com/store/apps/details?id=io.avaa.fi.androidoverview';
+
+const steps = [
+  'Lataa Avaa.io-sovellus tai käytä palvelua selaimella osoitteessa app.avaa.io.',
+  'Rekisteröidy sähköpostiosoitteellasi ja valitse salasana.',
+  'Tunnistaudu pankkitunnuksilla. Tunnistautuminen varmistaa oikeutesi taloyhtiön ja asunnon tietoihin.',
+  'Hae taloyhtiö nimellä Asunto-oy Kannelmäen Pientalot ja valitse se.',
+  'Valitse asuntosi ja roolisi (omistaja tai asukas).',
+  'Tarkista tiedot.',
+];
 ---
 
-<Article title="Asukastiedotteet" eyebrow="Taloyhtiö" wide>
-  <p class="mt-4 max-w-3xl text-lg text-muted">
-    Vuosien 2014 tiedotteet ovat kokonaisina sivuina. Uudemmat tiedotteet avautuvat PDF-tiedostoina.
+<Article title="Tiedotteet" eyebrow="Taloyhtiö" wide>
+  <p class="mt-4 max-w-3xl text-lg leading-relaxed text-ink/80">
+    Taloyhtiön tiedotteet, yhtiökokouskutsut ja asiakirjat löytyvät Avaa.io-taloyhtiöportaalista.
   </p>
-  <div class="prose mt-8 max-w-3xl">
-    <Content />
+
+  <div class="mt-8 max-w-3xl rounded-[1.5rem] border border-line bg-cream p-6 md:p-8">
+    <a
+      href={portalUrl}
+      class="inline-flex rounded-full bg-forest px-5 py-3 font-semibold text-cream hover:bg-moss"
+    >
+      Siirry Avaa.io-portaaliin
+    </a>
+    <p class="mt-4 text-[1.075rem] leading-[1.7] text-ink">
+      Palvelua voi käyttää myös Avaa.io-sovelluksella, joka on ladattavissa{' '}
+      <a
+        class="whitespace-nowrap font-semibold text-moss underline decoration-1 underline-offset-[0.18em] hover:text-forest"
+        href={appStoreUrl}>App Storesta</a
+      >{' '}ja{' '}
+      <a
+        class="whitespace-nowrap font-semibold text-moss underline decoration-1 underline-offset-[0.18em] hover:text-forest"
+        href={playStoreUrl}>Google Play -kaupasta</a
+      >.
+    </p>
   </div>
+
+  <section class="mt-10 max-w-3xl" aria-labelledby="tunnukset-otsikko">
+    <h2 id="tunnukset-otsikko" class="font-serif text-[1.85rem] tracking-tight text-forest">
+      Näin saat tunnukset
+    </h2>
+    <ol class="mt-6 list-none space-y-3 p-0">
+      {
+        steps.map((step, index) => (
+          <li class="flex gap-4 rounded-2xl bg-cream px-4 py-4 md:px-5">
+            <span
+              class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-leaf font-semibold text-forest"
+              aria-hidden="true"
+            >
+              {index + 1}
+            </span>
+            <p class="pt-0.5 text-[1.075rem] leading-[1.7] text-ink">{step}</p>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="mt-10 max-w-3xl" aria-labelledby="remontit-otsikko">
+    <h2 id="remontit-otsikko" class="font-serif text-[1.85rem] tracking-tight text-forest">
+      Remonttiohjeet
+    </h2>
+    <p class="mt-4 text-[1.075rem] leading-[1.7] text-ink">
+      Avaa.io-portaalista löytyvät myös kaikki remontteihin liittyvät ohjeet, esimerkiksi terassiohje
+      ja märkätilaohje. Remonteista on ilmoitettava{' '}
+      <a
+        class="font-semibold text-moss underline decoration-1 underline-offset-[0.18em] hover:text-forest"
+        href={url('/yhteystiedot')}>isännöitsijälle</a
+      >{' '}hyvissä ajoin etukäteen.
+    </p>
+  </section>
+
+  <section class="mt-10 max-w-3xl" aria-labelledby="apu-otsikko">
+    <h2 id="apu-otsikko" class="font-serif text-[1.85rem] tracking-tight text-forest">
+      Tarvitsetko apua?
+    </h2>
+    <p class="mt-4 text-[1.075rem] leading-[1.7] text-ink">
+      Jos tunnusten luomisessa tai portaalin käytössä on kysyttävää, voit ottaa yhteyttä isännöintiin
+      osoitteeseen{' '}
+      <a
+        class="font-semibold text-moss underline decoration-1 underline-offset-[0.18em] hover:text-forest"
+        href="mailto:fortes@fortes.fi">fortes@fortes.fi</a
+      >.
+    </p>
+  </section>
 </Article>

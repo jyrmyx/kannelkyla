@@ -1,7 +1,7 @@
 export const nav = [
   { href: '/', label: 'Etusivu' },
   { href: '/uutiset', label: 'Uutiset' },
-  { href: '/asukastiedotteet', label: 'Asukastiedotteet' },
+  { href: '/asukastiedotteet', label: 'Tiedotteet' },
   { href: '/asuminen', label: 'Asuminen' },
   { href: '/historia', label: 'Historia' },
   { href: '/kylakartta', label: 'Kyläkartta' },
