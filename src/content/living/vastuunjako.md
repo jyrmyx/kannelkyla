@@ -9,7 +9,7 @@ order: "3"
 
 Alla olevasta vastuunjakotaulukosta selviää, kuuluuko vastuu korjauksen teettämisestä ja maksamisesta osakkaalle vai taloyhtiölle. Taulukko pohjautuu asunto-osakeyhtiölakiin (1599/2009).
 
-Vuonna 2019 taloyhtiön kunnossapitovastuulle siirrettiin hajulukot ja ilmanvaihdon suodattimet. Pelastuslain muutoksen myötä myös palovaroittimet ovat vuonna 2026 siirtyneet taloyhtiön kunnossapitovastuulle. Asukas huolehtii edelleen palovaroittimen säännöllisestä testaamisesta ja puhdistuksesta sekä ilmoittaa vioista.
+Vuonna 2019 taloyhtiön kunnossapitovastuulle siirrettiin hajulukot ja ilmanvaihdon suodattimet. Pelastuslain muutoksen myötä myös palovaroittimet ovat 1.1.2026 alkaen siirtyneet taloyhtiön kunnossapitovastuulle. Asukas huolehtii edelleen palovaroittimen säännöllisestä testaamisesta ja puhdistuksesta sekä ilmoittaa vioista.
 
 Yhtiöjärjestyksellä voidaan määrätä kunnossapitovastuusta myös toisin. Jos yhtiöjärjestyksessä on asiasta määräyksiä, niitä noudatetaan. **Laki ei mitätöi vahingonkorvausvastuuta. Edelleen pätee: se maksaa, joka rikkoo.**
 
