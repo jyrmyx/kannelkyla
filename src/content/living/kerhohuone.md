@@ -11,6 +11,8 @@ Kannelkylän keskellä olevassa huoltorakennuksessa on asukkaiden käytössä my
 
 **[Varaa kerhohuone sähköisestä varauskalenterista](https://www.supersaas.com/schedule/Kkyla/Kerhohuone)**
 
+<!-- varauskalenteri -->
+
 ## Kerhotilan varaaminen omaan käyttöön
 
 Kerhohuoneen varaaminen tapahtuu ensisijaisesti sähköisen varauskalenterin avulla. Kalenterin avulla voit itse luoda varauksen sekä tutkia jo varattuja ajankohtia.
