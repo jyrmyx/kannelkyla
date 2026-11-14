@@ -1,0 +1,45 @@
+---
+import { getCollection, render } from 'astro:content';
+import Article from '../../layouts/Article.astro';
+import { url } from '../../lib/site';
+
+export async function getStaticPaths() {
+  const media = await getCollection('media');
+  return media.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const images = entry.data.images ?? [];
+---
+
+<Article title={entry.data.title} eyebrow="Kannelkylä mediassa">
+  <div class="prose mt-8">
+    <Content />
+  </div>
+  {
+    images.length > 0 && (
+      <ul class="mt-8 grid gap-4 sm:grid-cols-2">
+        {images.map((src, index) => (
+          <li>
+            <button
+              type="button"
+              class="block w-full overflow-hidden rounded-2xl bg-line"
+              data-lightbox={url(src)}
+              data-caption={`${entry.data.title}, sivu ${index + 1}`}
+              aria-label={`Avaa ${entry.data.title}, sivu ${index + 1}`}
+            >
+              <img src={url(src)} alt={`${entry.data.title}, sivu ${index + 1}`} class="w-full" loading="lazy" />
+            </button>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+  <p class="mt-12">
+    <a href={url('/tietoa#kannelkylä-mediassa')} class="font-semibold text-moss underline-offset-4 hover:underline">← Tietoa Kannelkylästä</a>
+  </p>
+</Article>

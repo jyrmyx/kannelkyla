@@ -19,7 +19,7 @@ for (const { path, heading } of pages) {
 
 test('the latest news item loads with its heading and images', async ({ page }) => {
   const listErrors = await openPage(page, '/uutiset');
-  await expectHeading(page, 'Uutiset');
+  await expectHeading(page, 'Ajankohtaista');
   await expectNoPageErrors(listErrors);
 
   const latest = page.locator('main a[href^="/uutiset/"]').first();
@@ -31,7 +31,7 @@ test('the latest news item loads with its heading and images', async ({ page }) 
   const response = await page.goto(href!);
   expect(response, `no response for ${href}`).toBeTruthy();
   expect(response!.status(), `${href} returned ${response!.status()}`).toBe(200);
-  await expect(page.getByRole('heading', { level: 1 })).not.toHaveText('Uutiset');
+  await expect(page.getByRole('heading', { level: 1 })).not.toHaveText('Ajankohtaista');
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   await expectImagesLoaded(page);
   await expectNoPageErrors(errors);

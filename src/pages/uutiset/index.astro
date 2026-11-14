@@ -6,7 +6,7 @@ import { formatDate, url } from '../../lib/site';
 const news = (await getCollection('news')).sort((a, b) => b.data.date.localeCompare(a.data.date));
 ---
 
-<Article title="Uutiset" eyebrow="Kannelkylä">
+<Article title="Ajankohtaista" eyebrow="Kannelkylä">
   <ul class="mt-10 divide-y divide-line border-y border-line">
     {
       news.map((item) => (
