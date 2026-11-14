@@ -4,35 +4,35 @@ title: "Asukastiedotteet"
 
 ## Tiedote peruskorjaushankkeen suunnittelun etenemisestä
 
-[Lue tiedote](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/1712042c_asukastiedote.pdf)
+[Lue tiedote](/tiedostot/1712042c_asukastiedote.pdf)
 
 ## Tiedote maaperätutkimus- ja mittaustöistä
 
-[Lue tiedote](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/Tiedote_Geotek_maaperatutkimukset_Vanhaistentie.pdf)
+[Lue tiedote](/tiedostot/Tiedote_Geotek_maaperatutkimukset_Vanhaistentie.pdf)
 
 ## Sprinttisuunnistuksen SM-kilpailut 9/2017
 
-[Lue tiedote](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/Sprinttisuunnistuksen_SM_20172c_asukastiedote.pdf)
+[Lue tiedote](/tiedostot/Sprinttisuunnistuksen_SM_20172c_asukastiedote.pdf)
 
 ## Tiedote ja kysely 9/2017
 
-[Lue tiedote/kysely](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/Tiedote_ja_kysely_2017_09.pdf)
+[Lue tiedote/kysely](/tiedostot/Tiedote_ja_kysely_2017_09.pdf)
 
 ## Tietoa peruskorjauksen suunnittelusta 5/2017
 
-[Lue tiedote](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/Tiedote_16.5.2017_peruskorjauksen_suunnittelusta.pdf)
+[Lue tiedote](/tiedostot/Tiedote_16.5.2017_peruskorjauksen_suunnittelusta.pdf)
 
 ## Takuukysely korvausilmaventtiilit + käyttöohje 5/2017
 
-[Lue tiedote](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/Takuukysely_korvausilmaventtiilit__kayttoohje.pdf)
+[Lue tiedote](/tiedostot/Takuukysely_korvausilmaventtiilit__kayttoohje.pdf)
 
 ## HSY KERÄYSAUTOT 5/2017
 
-[Lue tiedote](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/HSY_KERAYSAUTOT_kevat_2017.pdf)
+[Lue tiedote](/tiedostot/HSY_KERAYSAUTOT_kevat_2017.pdf)
 
 ## Asukastiedote 4/2017
 
-[Lue tiedote](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/Tiedote_huhtikuu_2017.pdf)
+[Lue tiedote](/tiedostot/Tiedote_huhtikuu_2017.pdf)
 
 ## Asukastiedote 7/2014
 
@@ -95,5 +95,3 @@ Tiedote julkaistu 16.4.2014
 5. Isännöitsijän yhteystiedot:
 
 [Lue tiedote](/asukastiedotteet/4-2014)
-
-Vanhemmat tiedotteet löydät Kannelkylän vanhoilta verkkosivuilta. [Siirry](http://www.kannelkyla.fi/asukastiedotteet.shtml)

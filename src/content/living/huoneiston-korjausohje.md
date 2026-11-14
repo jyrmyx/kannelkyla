@@ -11,7 +11,7 @@ Rakennuksen korjaaminen ja kunnossapito kuuluvat pääsääntöisesti sen omista
 
 **2. Ilmoitusvelvollisuus**
 
-Osakkaan on ilmoitettava isännöitsijälle tulevista korjauksista hyvissä ajoin ennen hankkeisiin ryhtymistä. Ilmoituksen voi tehdä [korjausilmoituksella](http://www.kannelkyla.fi/lomakkeet/Korjausilmoitus.doc).
+Osakkaan on ilmoitettava isännöitsijälle tulevista korjauksista hyvissä ajoin ennen hankkeisiin ryhtymistä. Ilmoituksen voi tehdä [korjausilmoituksella](/tiedostot/korjausilmoitus.doc).
 
 **3. Suunnitelmien laatiminen ja hyväksyttäminen**
 

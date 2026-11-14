@@ -14,9 +14,9 @@ Ilmoita korjauksista isännöitsijälle **viimeistään kuukautta ennen** hankke
 
 Ohjeet ja lomakkeet:
 
-- [Korvausilmaventtiilin käyttö- ja huolto-ohjeet (PDF)](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/korvausilmaventtiilin_ohjeet.pdf)
-- [Terassiohje (PDF, 33 kt)](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/tiedostot/terassiohje.pdf)
-- [Korjausilmoitus (Word, 50 kt)](https://www.kannelkyla.fi/files/kannelkyla.kotisivukone.com/korjausilmoitus.doc)
+- [Korvausilmaventtiilin käyttö- ja huolto-ohjeet (PDF)](/tiedostot/korvausilmaventtiilin_ohjeet.pdf)
+- [Terassiohje (PDF, 33 kt)](/tiedostot/terassiohje.pdf)
+- [Korjausilmoitus (Word, 50 kt)](/tiedostot/korjausilmoitus.doc)
 
 ## Ohjattu toiminta
 
