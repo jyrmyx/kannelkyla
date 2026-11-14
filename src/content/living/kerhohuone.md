@@ -5,21 +5,23 @@ description: "Yhteinen kerhohuone huoltorakennuksessa."
 order: "2"
 ---
 
-**Kannelkylän keskellä olevassa huoltorakennuksessa on asukkaiden käytössä myös kerhotila. Asukkaat voivat varata kerhotilan maksutta käyttöönsä harrastustoimintaa, juhlia ja muita tilaisuuksia varten.
+Kannelkylän keskellä olevassa huoltorakennuksessa on asukkaiden käytössä myös kerhotila. Asukkaat voivat varata kerhotilan maksutta käyttöönsä harrastustoimintaa, juhlia ja muita tilaisuuksia varten.
 
-HUOM! Tilaa vuokrataan vain taloyhtiön asukkaille. The venue is only for Kannelkylä residents' use.**
+**HUOM! Tilaa vuokrataan vain taloyhtiön asukkaille. The venue is only for Kannelkylä residents' use.**
+
+**[Varaa kerhohuone sähköisestä varauskalenterista](https://www.supersaas.com/schedule/Kkyla/Kerhohuone)**
 
 ## Kerhotilan varaaminen omaan käyttöön
 
 Kerhohuoneen varaaminen tapahtuu ensisijaisesti sähköisen varauskalenterin avulla. Kalenterin avulla voit itse luoda varauksen sekä tutkia jo varattuja ajankohtia.
 
-Tehtyäsi varauksen saan sähköpostiisi varausvahvistuksen mukana nelinumeroisen koodin jonka avulla saat pesutuvan eteisessä olevan numerolukitun kaapin auki. Kaapista löydät kerhotilaan käyvät avaimet. Huom! tarvitset pesutuvan avaimet noutaaksesi kerhohuoneen avaimen.
+Tehtyäsi varauksen saat sähköpostiisi varausvahvistuksen mukana nelinumeroisen koodin jonka avulla saat pesutuvan eteisessä olevan numerolukitun kaapin auki. Kaapista löydät kerhotilaan käyvät avaimet. Huom! tarvitset pesutuvan avaimet noutaaksesi kerhohuoneen avaimen.
 
-Kerhohuoneen varaus sähköisen varauskalenterin avulla:
+Kerhohuoneen varaus [sähköisen varauskalenterin](https://www.supersaas.com/schedule/Kkyla/Kerhohuone) avulla:
 
 **Ohjeet varauksen tekemiseen:*Huom Varauksia voi tehdä muutaman kuukauden etukäteen, siihen asti kuin kalenteri on avattuna.***
 
-1. Mikäli olet uusi käyttäjä, luo itsellesi tunnukset sivun varauskalenterin oikeasta yläkulmasta tai [TÄSTÄ](http://www.supersaas.com/users/new/Kkyla?after=%2Fschedule%2FKkyla%2FKerhohuone&return=%2Fschedule%2Flogin%2FKkyla%2FKerhohuone%3Fafter%3D%252Fschedule%252FKkyla%252FKerhohuone)
+1. Mikäli olet uusi käyttäjä, luo itsellesi tunnukset sivun varauskalenterin oikeasta yläkulmasta tai [TÄSTÄ](https://www.supersaas.com/users/new/Kkyla?after=%2Fschedule%2FKkyla%2FKerhohuone&return=%2Fschedule%2Flogin%2FKkyla%2FKerhohuone%3Fafter%3D%252Fschedule%252FKkyla%252FKerhohuone)
 
 Jos sinulla on jo tunnukset, kirjaudu tunnuksillasi kalenteriin.
 2. Mene varauskalenteriin ja tuplaklikkaa haluamaasi aikaa.
@@ -74,4 +76,4 @@ Ongelmatilanteissa olkaa yhteydessä Laura Kuulasmaahan (12 K 64) mieluiten teks
 
 13. Kerhohuoneella säännöllisesti kokoontuvien kerhojen tulee olla taloyhtiön asukkaille avoimia.
 
-14. Mikäli kerhohuoneen kunnossa tai varustuksessa on jotain huomautettavaa, tulee siitä ilmoittaa huoltomiehelle tai nettisivuilta löytyvällä [lomakkeella](/lomake.html?id=3) taloyhtiön hallitukselle.
+14. Mikäli kerhohuoneen kunnossa tai varustuksessa on jotain huomautettavaa, tulee siitä ilmoittaa huoltomiehelle tai taloyhtiön hallitukselle.
