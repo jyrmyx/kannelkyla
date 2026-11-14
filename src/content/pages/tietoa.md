@@ -27,3 +27,10 @@ Asuntoja on monen kokoisia. Yksiöt ja kaksiot ovat kaksikerroksisissa luhtitalo
 | 1h+kk+parveke | 33,5 | 12 kpl |
 
 \* Päätyasunnot ovat pienemmät kuin rakennusten keskellä olevat asunnot.
+
+## Kannelkylä mediassa
+
+- Helsingin Sanomat 2026: [Kannelmäki oli koko maailma, muistelee lähiössä lapsuutensa asunut Eva Biaudet](https://www.hs.fi/kuukausiliite/art-2000012291334.html) (vain tilaajille)
+- Helsingin Sanomat 2021: [Länsi-Helsingissä lymyilee pieni kylä ilman autoteitä – 500 asukkaan taloyhtiö tekee nyt jättimäistä remonttia](https://www.hs.fi/pkseutu/art-2000008120920.html)
+- Avotakka 2014: [Kannelkylä lokakuun Avotakka-lehdessä](/tietoa/avotakka-lokakuu-2014/)
+- Kotiliesi 1979: [Kannelkylä Kotiliesi-lehdessä](/tietoa/kotiliesi-1979/)

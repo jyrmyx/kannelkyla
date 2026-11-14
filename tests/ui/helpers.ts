@@ -2,13 +2,14 @@ import { expect, type Page } from '@playwright/test';
 
 export const pages = [
   { path: '/', heading: 'Tervetuloa Kannelkylään' },
-  { path: '/uutiset', heading: 'Uutiset' },
+  { path: '/uutiset', heading: 'Ajankohtaista' },
   { path: '/asukastiedotteet', heading: 'Tiedotteet' },
   { path: '/asuminen', heading: 'Asuminen ja eläminen' },
   { path: '/asuminen/pesutupa', heading: 'Pesutupa' },
   { path: '/historia', heading: 'Kannelkylän historia' },
   { path: '/kylakartta', heading: 'Kyläkartta' },
   { path: '/tietoa', heading: 'Tietoa Kannelkylästä' },
+  { path: '/tietoa/kotiliesi-1979', heading: 'Kannelkylä Kotiliesi-lehdessä 1979' },
   { path: '/yhteystiedot', heading: 'Yhteystiedot' },
 ] as const;
 

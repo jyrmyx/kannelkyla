@@ -9,7 +9,7 @@ order: "4"
 
 ## Jäteastiat
 
-Kannelkylässä on lasi-, metalli-, muovi- ja pahvinkeräysastioita. Lasin-, metallin-, muovin- ja pahvinkeräysastiat löytyvät 1- ja 3 - parkkialueiden roskakatoksista. Lisäksi pahvinkeräysastioita löytyy 12 K talon edustalla olevasta roskakatoksesta sekä 14 M ja 14 0 talon välistä. Käytettyjä paristoja vastaanottaa mm. K-market Iso-Kappa.
+Kannelkylässä on lasi-, metalli-, muovi- ja pahvinkeräysastioita. Lasin-, metallin-, muovin- ja pahvinkeräysastiat löytyvät 1- ja 3 - parkkialueiden roskakatoksista. Lisäksi pahvinkeräysastioita löytyy 12 K talon edustalla olevasta roskakatoksesta sekä 14 M ja 14 0 talon välistä. Käytettyjä paristoja vastaanottavat niitä myyvät liikkeet.
 
 Suuret jätteet kuten kalusteet, kodinkoneet sekä esimerkiksi remontissa syntyvä jäte on toimitettava Sortti-asemalle. Kannelkylää lähin Sortti-asema sijaitsee Konalassa osoitteessa Betonitie 3. Katso HSY:n [ohjeet Sortti-asemista](http://www.hsy.fi/jatehuolto/Documents/Esitteet/HSY_Sortti-asemat_palvelevat_2014_A5_web.pdf) (PDF)
 
@@ -19,7 +19,7 @@ Vaarallisten jätteiden keräyskontit sijaitsevat yleensä huoltamoiden tai kaup
 
 Kannelkylää lähin vaarallisten jätteiden vastaanottopiste on: Neste Kannelmäki, Laulukuja 2.
 
-Keväisin ja syksyisin otetaan myös sekajätelava asukkaiden isoimmille jätteille, kuten vanhoille huonekaluille. Oksa- ja biojätelavat tulevat yleensä myös keväisin ja syksyisin talkoiden yhtydessä
+Biojätelava puutarhajätteelle tulee huoltorakennuksen eteen keväisin ja syksyisin pihatalkoiden yhteydessä. Huoltoyhtiö huolehtii yleisten alueiden haravoinnista (lehtipuhaltimin), asukkaiden vastuulla ovat vain oman pihan istutukset ja lehdet. Jätelavalle vietävät pensaiden oksat tulee pilkkoa pieneksi, jotteivät ne täytä lavaa hetkessä. Taloyhtiöllä on myös haketin, jota voi pyytää lainaan hallituksen puheenjohtajalta tai Juha Oilalta (12 A).
 
 ## Ohjeet
 

@@ -35,4 +35,13 @@ const pages = defineCollection({
   }),
 });
 
-export const collections = { news, living, pages };
+const media = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/media' }),
+  schema: z.object({
+    title: z.string(),
+    date: z.string(),
+    images: z.array(z.string()).optional(),
+  }),
+});
+
+export const collections = { news, living, pages, media };
