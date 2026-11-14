@@ -60,7 +60,7 @@ Mikäli asiasi vaatii välitöntä reagointia (esimerkiksi vesivahinko tai oven 
 - Marja Uotila
 - Hans Weckman
 - Tiina Ennever (varajäsen)
-- Miika Palomäki (varajäsen)
+- Mirella Peltonen (varajäsen)
 
 Yhteydenotot hallitukselle isännöitsijän kautta.
 
