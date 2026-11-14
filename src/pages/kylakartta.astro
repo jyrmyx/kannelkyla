@@ -5,10 +5,61 @@ import Article from '../layouts/Article.astro';
 const entry = await getEntry('pages', 'kylakartta');
 if (!entry) throw new Error('Kyläkartta puuttuu');
 const { Content } = await render(entry);
+
+// Nominatim building centroids, November 2026:
+// Vanhaistentie 12: 60.2446693, 24.8773714
+// Vanhaistentie 14: 60.2465809, 24.8770323
+// The bbox covers both 12- and 14-areas plus the surrounding streets.
+const mapLat = '60.245625';
+const mapLon = '24.877202';
+const mapBbox = '24.8723,60.2435,24.8835,60.2477';
+const osmEmbed = `https://www.openstreetmap.org/export/embed.html?bbox=${mapBbox}&layer=mapnik&marker=${mapLat}%2C${mapLon}`;
+const osmLarge = `https://www.openstreetmap.org/?mlat=${mapLat}&mlon=${mapLon}#map=17/${mapLat}/${mapLon}`;
+const googleDirections =
+  'https://www.google.com/maps/dir/?api=1&destination=Vanhaistentie+12,+00420+Helsinki';
 ---
 
 <Article title="Kyläkartta" eyebrow="12- ja 14-alue" wide>
   <div class="prose mt-8">
     <Content />
   </div>
+
+  <section id="sijainti" class="mt-10 scroll-mt-24" aria-labelledby="sijainti-otsikko">
+    <h2 id="sijainti-otsikko" class="font-serif text-[1.85rem] tracking-tight text-forest">Sijainti</h2>
+    <p class="mt-4 text-[1.075rem] leading-[1.7] text-ink">
+      Kylä sijaitsee osoitteessa Vanhaistentie 12–14, 00420 Helsinki.
+    </p>
+    <div class="mt-5 rounded-[1.1rem] border border-line bg-cream p-1.5">
+      <div class="aspect-[4/3] overflow-hidden rounded-[0.95rem] bg-line">
+        <iframe
+          title="OpenStreetMap-kartta Kannelkylästä, Vanhaistentie 12–14, Helsinki"
+          src={osmEmbed}
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="h-full w-full border-0"></iframe>
+      </div>
+    </div>
+    <p class="mt-3 text-sm text-muted">
+      <a
+        class="font-semibold text-moss underline decoration-1 underline-offset-[0.18em] hover:text-forest"
+        href={osmLarge}
+      >
+        Avaa isompi kartta OpenStreetMapissa
+      </a>
+      <span aria-hidden="true"> · </span>
+      <a
+        class="font-semibold text-moss underline decoration-1 underline-offset-[0.18em] hover:text-forest"
+        href={googleDirections}
+      >
+        Reittiohjeet Google Mapsissa
+      </a>
+    </p>
+  </section>
 </Article>
+
+<style>
+  /* Varaa piirretylle kartalle tila etukäteen, jotta #sijainti-linkki osuu oikeaan kohtaan. */
+  .prose :global(img[src$='kylankartta2.jpg']) {
+    aspect-ratio: 813 / 1055;
+  }
+</style>
