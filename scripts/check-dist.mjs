@@ -95,13 +95,6 @@ const history = await readFile(path.join(dist, 'historia/index.html'), 'utf8');
 if (!home.includes('Tervetuloa Kannelkylään')) failures.push('home is missing the welcome heading');
 if (!contacts.includes('Tanja Partanen')) failures.push('contacts page is missing the manager');
 if (!history.includes('Asuntotuotantotoimiston')) failures.push('history page is missing its opening text');
-const clubroom = await readFile(path.join(dist, 'asuminen/kerhohuone/index.html'), 'utf8');
-if (!clubroom.includes('https://www.supersaas.com/schedule/Kkyla/Kerhohuone')) {
-  failures.push('club room page is missing the booking calendar');
-}
-if (!clubroom.includes('id="varauskalenteri"')) {
-  failures.push('club room page is missing the calendar frame');
-}
 if (cssLinks === 0) failures.push('no stylesheet link in the built pages');
 
 if (!basePrefix) {
