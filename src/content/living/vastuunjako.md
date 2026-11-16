@@ -7,9 +7,9 @@ order: "3"
 
 ## Kunnossapitovastuun jakautuminen asunto-osakeyhtiössä
 
-Alla olevasta vastuunjakotaulukosta selviää, kuuluuko vastuu korjauksen teettämisestä ja maksamisesta osakkaalle vai taloyhtiölle. Taulukko pohjautuu asunto-osakeyhtiölakiin (1599/2009).
+Alla olevasta vastuunjakotaulukosta selviää, kuuluuko vastuu korjauksen teettämisestä ja maksamisesta osakkaalle vai taloyhtiölle. Taulukko pohjautuu asunto-osakeyhtiölakiin. Laki asunto-osakeyhtiölain muuttamisesta 535/2026 tuli voimaan **1.10.2026**.
 
-Vuonna 2019 taloyhtiön kunnossapitovastuulle siirrettiin hajulukot ja ilmanvaihdon suodattimet. Pelastuslain muutoksen myötä myös palovaroittimet ovat 1.1.2026 alkaen siirtyneet taloyhtiön kunnossapitovastuulle. Asukas huolehtii edelleen palovaroittimen säännöllisestä testaamisesta ja puhdistuksesta sekä ilmoittaa vioista.
+Pelastuslain muutoksen myötä palovaroittimet ovat 1.1.2026 alkaen siirtyneet taloyhtiön kunnossapitovastuulle. Asukas huolehtii edelleen palovaroittimen säännöllisestä testaamisesta ja puhdistuksesta sekä ilmoittaa vioista.
 
 Yhtiöjärjestyksellä voidaan määrätä kunnossapitovastuusta myös toisin. Jos yhtiöjärjestyksessä on asiasta määräyksiä, niitä noudatetaan. **Laki ei mitätöi vahingonkorvausvastuuta. Edelleen pätee: se maksaa, joka rikkoo.**
 
@@ -43,18 +43,19 @@ Taulukko pätee normaalista asumisesta, kulumisesta ja vanhenemisesta johtuviin 
 | Automaattiulko-ovi, huoneiston ulkopuoliset laitteistot | yhtiö |  |
 | **IKKUNAT** |  |  |
 | Ulkopuite ja karmi | yhtiö |  |
-| Sisäpuite ja välipuite | osakas |  |
+| Sisäpuite ja välipuite | yhtiö |  |
 | Ikkunoiden ulkopuolen kunnossapito ja maalaus | yhtiö |  |
-| Ikkunoiden sisäpuolen kunnossapito ja maalaus | osakas |  |
+| Ikkunoiden sisäpuolen kunnossapito ja maalaus | yhtiö (osakkaan itse esimerkiksi valkoiseksi maalaamat osakkaan vastuulla) |  |
 | Ikkunan ulkolasi | yhtiö |  |
-| Ikkunan sisälasit (myös aukeava umpiolasielementti) | osakas |  |
-| Tuuletusluukku | osakas |  |
+| Ikkunan sisälasit (myös aukeava umpiolasielementti) | yhtiö |  |
+| Tuuletusluukku | yhtiö |  |
 | Kiinteästi seinärakenteeseen asennettu umpiolasielementti | yhtiö |  |
 | Ulkopuitteen käynti ja heloitus | yhtiö |  |
-| Sisäpuitteiden käynti ja heloitus | osakas |  |
-| Ikkunan aukipitolaite (säppi ikkunan sisäpuolella) | osakas |  |
-| Parvekeoven ja ikkunapuitteiden tiivistys | osakas |  |
-| Yhtiön asentamat parvekelasit, markiisit yms. rakenteet | yhtiö |  |
+| Sisäpuitteiden käynti ja heloitus | yhtiö |  |
+| Ikkunan aukipitolaite (säppi ikkunan sisäpuolella) | yhtiö |  |
+| Ikkunoiden tiivisteet | yhtiö |  |
+| Parvekkeen ja terassin oven tiivistys | osakas |  |
+| Yhtiön asentamat parvekelasit, markiisit yms. rakenteet | yhtiö (Kannelkylässä kaikki asennukset osakasmuutostyönä tehtyjä) |  |
 | Sälekaihtimet | osakas |  |
 | **KIINTEÄT KALUSTEET JA LAITTEET** |  |  |
 | Kaapistot ja komerot | osakas |  |
@@ -76,7 +77,7 @@ Taulukko pätee normaalista asumisesta, kulumisesta ja vanhenemisesta johtuviin 
 | Vesilukko ja lattiakaivot, puhdistus | yhtiö ja osakas |  |
 | Lämminvesivaraaja (sähkö-, vesilaitteet, venttiilit ja putkisto) | yhtiö |  |
 | Vesilämmityslaitteet (lämpö-, lattialämmitys- ja kuivatuspatterit) | yhtiö |  |
-| Ilmalämpöpumppu (yhtiön asentama) | yhtiö |  |
+| Ilmalämpöpumppu (osakkaan asentama) | osakas |  |
 | **PAINOVOIMAINEN ILMANVAIHTO** |  |  |
 | Raitisilmaventtiili, korjaus ja uusiminen | yhtiö |  |
 | Suodattimet, uusiminen ja puhdistus, huoneiston sisäpuoliset osat | osakas |  |
