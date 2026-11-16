@@ -17,8 +17,8 @@ Pyykkikoneet toimivat lähimaksulla, esimerkiksi pankkikortilla tai puhelimella.
 
 1. Laita pyykki koneeseen.
 2. Laita pesuaine koneeseen (luukku koneen päällä) ja valitse sopiva pesuohjelma. Vältä hajustettuja pesuaineita.
-3. Valitse haluamasi kone seinällä olevasta maksupäätteestä ja suorita lähimaksu. Maksun onnistuttua valitse vielä mitä konetta haluat käyttää painamalla Talpet-laitteesta kyseisen koneen numeroa (kone 1 = lähinnä ikkunaa oleva iso kone).
-4. Kun laiteen lamppu sammuu, voit käynnistää pesukoneen sen virtanapista.
+3. Valitse haluamasi kone seinällä olevasta maksupäätteestä ja suorita lähimaksu (kone 1 = lähinnä ikkunaa oleva iso kone).
+4. Kun maksu on onnistunut, voit käynnistää pesukoneen sen virtanapista.
 5. Käynnistääksesi toisen pesukoneen toista yllä olevat kohdat (=yksi maksu per koneellinen).
 6. Pyykkituvassa oleva erillinen punainen linko ei valitettavasti ole enää käytössä, sitä ei kannattanut enää korjata eikä uusia myydä enää järkevään hintaan. Kuivausrumpua käyttäessäsi muista tyhjentää nukkasihti harjalla (luukku koneen edessä alhaalla). Jos käytät kuivaushuonetta, muista noutaa pyykkisi ripeästi, jotta seuraavienkin pyykkäreiden pyykit mahtuvat kuivumaan. Esim. lakanapyykki kuivuu 2-4 tunnissa, kun puhallin on päällä.
 
@@ -31,3 +31,11 @@ Hienopesu (40°c) 40 min
 Käsinpesuohjelma 23 min
 
 Siliävä pyykki valmistuu noin 10 minuuttia nopeammin. Pikanapin käyttö lyhentää pesuaikaa noin 7 minuuttia.
+
+![Maksupääte: valitse kone](/media/pesutupa-maksupaate-valitse-kone.jpg)
+
+*Kuva: Maksupääte – valitse kone*
+
+![Maksupääte: lähimaksu kortilla tai puhelimella](/media/pesutupa-maksupaate-lahimaksu.jpg)
+
+*Kuva: Maksupääte – lähimaksu kortilla tai puhelimella*
