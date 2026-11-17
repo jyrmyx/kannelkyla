@@ -11,7 +11,7 @@ order: "4"
 
 Kannelkylässä on lasi-, metalli-, muovi- ja pahvinkeräysastioita. Lasin-, metallin-, muovin- ja pahvinkeräysastiat löytyvät 1- ja 3 - parkkialueiden roskakatoksista. Lisäksi pahvinkeräysastioita löytyy 12 K talon edustalla olevasta roskakatoksesta sekä 14 M ja 14 0 talon välistä. Käytettyjä paristoja vastaanottavat niitä myyvät liikkeet.
 
-Suuret jätteet kuten kalusteet, kodinkoneet sekä esimerkiksi remontissa syntyvä jäte on toimitettava Sortti-asemalle. Kannelkylää lähin Sortti-asema sijaitsee Konalassa osoitteessa Betonitie 3. Katso HSY:n [ohjeet Sortti-asemista](http://www.hsy.fi/jatehuolto/Documents/Esitteet/HSY_Sortti-asemat_palvelevat_2014_A5_web.pdf) (PDF)
+Suuret jätteet kuten kalusteet, kodinkoneet sekä esimerkiksi remontissa syntyvä jäte on toimitettava Sortti-asemalle. Kannelkylää lähin Sortti-asema sijaitsee Konalassa osoitteessa Betonitie 3. Katso HSY:n [ohjeet Sortti-asemista](https://www.hsy.fi/jatteet-ja-kierratys/sortti-asemat-ja-muut-kierratyspalvelut/).
 
 Lähes kaikki kodin vaaralliset jätteet voi viedä maksutta vaarallisten jätteiden keräyspisteisiin eli vaarallisten jätteiden kontteihin. Poikkeuksena ovat lääkkeet, kylmälaitteet, sähkö- ja elektroniikkaromu sekä painekyllästetty puu.
 
@@ -23,6 +23,7 @@ Biojätelava puutarhajätteelle tulee huoltorakennuksen eteen keväisin ja syksy
 
 ## Ohjeet
 
-HSY:n [Jäteoppaaseen](https://www.hsy.fi/fi/asukkaalle/lajittelujakierratys/jateopas/Sivut/default.aspx)HSY:n [Biojätteen lajitteluohje](https://www.hsy.fi/fi/asukkaalle/lajittelujakierratys/lajitteluohjeet/biojate/Sivut/default.aspx)HSY:n [Remontoijan jäteopas](https://www.hsy.fi/fi/asukkaalle/lajittelujakierratys/lajitteluohjeet/rakennusjate/Sivut/default.aspx)
-
-HSY:n [Muovipakkaukset](https://www.hsy.fi/fi/asukkaalle/lajittelujakierratys/lajitteluohjeet/muovi/Sivut/default.aspx)
+- HSY:n [Jäteopas](https://www.hsy.fi/jatteet-ja-kierratys/jateopas-ja-lajitteluohjeet/)
+- HSY:n [Biojätteen lajitteluohje](https://www.hsy.fi/jatteet-ja-kierratys/jateopas-ja-lajitteluohjeet/lajittelu/biojate/)
+- HSY:n [Remontoijan jäteopas (rakennusjäte)](https://www.hsy.fi/jatteet-ja-kierratys/jateopas-ja-lajitteluohjeet/lajittelu/rakennusjate/)
+- HSY:n [Muovipakkaukset](https://www.hsy.fi/jatteet-ja-kierratys/jateopas-ja-lajitteluohjeet/lajittelu/muovi/)
