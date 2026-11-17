@@ -23,6 +23,7 @@ Biojätelava puutarhajätteelle tulee huoltorakennuksen eteen keväisin ja syksy
 
 ## Ohjeet
 
-HSY:n [Jäteoppaaseen](https://www.hsy.fi/fi/asukkaalle/lajittelujakierratys/jateopas/Sivut/default.aspx)HSY:n [Biojätteen lajitteluohje](https://www.hsy.fi/fi/asukkaalle/lajittelujakierratys/lajitteluohjeet/biojate/Sivut/default.aspx)HSY:n [Remontoijan jäteopas](https://www.hsy.fi/fi/asukkaalle/lajittelujakierratys/lajitteluohjeet/rakennusjate/Sivut/default.aspx)
-
-HSY:n [Muovipakkaukset](https://www.hsy.fi/fi/asukkaalle/lajittelujakierratys/lajitteluohjeet/muovi/Sivut/default.aspx)
+- HSY:n [Jäteopas](https://www.hsy.fi/jatteet-ja-kierratys/jateopas-ja-lajitteluohjeet/)
+- HSY:n [Biojätteen lajitteluohje](https://www.hsy.fi/jatteet-ja-kierratys/jateopas-ja-lajitteluohjeet/lajittelu/biojate/)
+- HSY:n [Remontoijan jäteopas (rakennusjäte)](https://www.hsy.fi/jatteet-ja-kierratys/jateopas-ja-lajitteluohjeet/lajittelu/rakennusjate/)
+- HSY:n [Muovipakkaukset](https://www.hsy.fi/jatteet-ja-kierratys/jateopas-ja-lajitteluohjeet/lajittelu/muovi/)
