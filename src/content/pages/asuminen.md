@@ -2,7 +2,7 @@
 title: "Asuminen ja eläminen"
 ---
 
-Kannelkylässä on noin 450 asukasta. Vehreä ja turvallinen ympäristö vetää Kannelkylään lapsiperheitä, mutta alkuperäisiä, neljäkymmentä vuotta sitten alueelle muuttaneita asukkaita asuu yhä Kannelkylässä. Kannelkylässä asutaan myös monessa polvessa: monet ovat muuttaneet lastensa kanssa takaisin oman lapsuuden ympäristöönsä.
+Kannelkylässä on noin 450 asukasta. Vehreä ja turvallinen ympäristö vetää Kannelkylään lapsiperheitä, mutta alkuperäisiä, yli viisikymmentä vuotta sitten alueelle muuttaneita asukkaita asuu yhä Kannelkylässä. Kannelkylässä asutaan myös monessa polvessa: monet ovat muuttaneet lastensa kanssa takaisin oman lapsuuden ympäristöönsä.
 
 Kannelkylässä on yhteisöllisyyttä. Asukkaat esimerkiksi hoitavat piha-alueita syksyisin talkoilla, ja kylän kerhohuoneella on pidetty yhteisiä kirpputoreja ja muita tapahtumia. Tervetuloa mukaan!
 
