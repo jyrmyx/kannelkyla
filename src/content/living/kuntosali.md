@@ -5,11 +5,11 @@ description: "Taloyhtiön kuntosali huoltorakennuksessa."
 order: "3"
 ---
 
-Taloyhtiön kuntosali on huoltorakennuksessa, kerhohuoneen vieressä. Kuntoilukerho on toiminut jo vuodesta 1993. Siihen voi liittyä maksamalla liittymismaksun, jonka jälkeen saa avaimen kuntosalille.
+Taloyhtiön kuntosali on huoltorakennuksessa, kerhohuoneen vieressä. Kuntoilukerho on toiminut jo vuodesta 1993. Siihen voi liittyä maksamalla jäsenmaksun, jonka jälkeen pääset käyttämään kuntosalia.
 
-Kuntosalin avaimia saa Esa Palmroosilta osoitteesta 14 A 92, puhelin 0405421388, sähköposti esa.palmroos@gmail.com. Yhteydenotot mieluiten viestillä.
+Kun olet maksanut jäsenmaksun, saat tietoosi vuosittain vaihtuvan koodin, jonka avulla saat pesutuvan eteisessä olevan numerolukitun avainkaapin auki. Kaapista löydät kuntosalin avaimen, samoin kuin kerhohuoneen varauksen yhteydessä. Huom! tarvitset pesutuvan avaimet noutaaksesi kuntosalin avaimen. Palauta avain kaappiin käytön jälkeen.
 
-Kuntoiluhuoneen avain tulee palauttaa, kun muuttaa alueelta pois.
+Lisätietoja saa Esa Palmroosilta osoitteesta 14 A 92, puhelin 0405421388, sähköposti esa.palmroos@gmail.com. Yhteydenotot mieluiten viestillä.
 
 Kuntosalimaksu kalenterivuodelle on 20€/talous, ja sen voi maksaa tilille **Kannelkylän kuntosali, Nordea, tilinumero FI16 1418 2947 9225 22.**
 
@@ -21,9 +21,7 @@ Kuntosalin käyttäjät muodostavat **Kannelkylän kuntokerhon**. Kuntosalin kä
 
 Käyttömaksu antaa käyttöoikeuden koko taloudelle maksamisvuonna. Käyttömaksu käytetään kuntosalivälineistön huoltoon ja hankintoihin.
 
-Kuntosalin käyttöoikeuden ja avaimen saa maksamalla 20 euron käyttömaksun tilille (numero yläpuolella). Avaimen saa Esalta. Avaimetonta henkilöä ei saa päästää kuntoiluhuoneeseen.
-
-Taloyhtiöstä poismuuttava on velvoitettu palauttamaan avaimen. Samoin asukas, joka ei maksa vuoden jäsenmaksua.
+Kuntosalin käyttöoikeuden ja avainkaapin koodin saa maksamalla 20 euron käyttömaksun tilille (numero yläpuolella). Jäsenmaksua maksamatonta henkilöä ei saa päästää kuntoiluhuoneeseen.
 
 Kuntosalin käyttö varataan salilla olevaan varauskirjaan. Jäsen voi varata enintään kolme yhden tunnin vuoroa viikkoa kohden. Salia saa käyttää klo 6-23 välisenä aikana.
 
